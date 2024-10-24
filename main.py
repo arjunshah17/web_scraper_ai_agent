@@ -1,7 +1,7 @@
-from WebScraper.client import RufusClient
+from WebScraper.client import WebScraperClient
 
 if __name__ == "__main__":
-    client = RufusClient()
+    client = WebScraperClient()
     instructions = "Find information about product features and customer FAQs."
     documents = client.scrape("https://example.com", instructions)
     print(documents)
